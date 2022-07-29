@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Orbitron', sans-serif;
+}
+
+ul{
+    list-style: none;
+}
+
+.container{
+    width: 1120px;
+    margin: 64px auto;
+    background-image: url("./assets/start.png");
+    background-position: 46% 100%;
+    background-repeat: no-repeat;
+    background-size: 40px;
+    height: 83vh;
+}
+
+/* Navbar */
+
+.navbar-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-container div img{
+    width: 65%;
+}
+
+.navbar-container .list{
+    display: flex;
+}
+
+.navbar-container .list li{
+    margin-right: 40px;
+    font-weight: 500;
+    position: relative;
+    transition: all .3s ease;
+}
+
+.navbar-container .list li::after{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 20px;
+    left: 8px;
+    width: 0;
+    height: 2px;
+    border-radius: 2px;
+    transition: all .3s ease;
+    background-color: #000;
+}
+
+.navbar-container .list li:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.navbar-container .list li:hover::after{
+    width: 70%;
+    background-color: #000000;
+}
+
+.navbar-container .button-group{
+    display: flex;
+}
+
+.navbar-container .button-group .search-icon svg{
+    width: 17px;
+    height: 26px;
+    margin-right: 10px;
+}
+
+.navbar-container .button-group .nav-button{
+    background-color: transparent;
+    padding: 3px 25px;
+    border-radius: 8px;
+    color: #242B2E;
+    transition: all .3s ease;
+}
+
+.navbar-container .button-group .nav-button:hover{
+    background-color: #000000;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+/* Hero */
+
+.hero-container{
+    position: relative;
+    margin-top: 100px; 
+}
+
+.hero-container div>img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 365px;
+    display: no;
+}
+
+.hero-container .square img{
+    position: absolute;
+    top: 216px;
+    left: 137px;
+    width: 285px;
+}
+
+.hero-container .star img{
+    position: absolute;
+    top: 15px;
+    right: 0;
+    width: 55px;
+}
+
+.hero-container .globe img{
+    position: absolute;
+    top: -45px;
+    left: 60%;
+    width: 60px;
+}
+
+.hero-container .hero-container-right{
+    position: absolute;
+    top: 100px;
+    right: -60px;
+    width: 65%;
+    text-align: center;
+}
+
+.hero-heading{
+    font-size: 50px;
+}
+
+.hero-description{
+    font-size: 11px;
+    padding: 50px 100px 70px;
+}
+
+.hero-container-right div .button-email{
+    background-color: transparent;
+    padding: 1px 19px 2px 19px;
+    border-radius: 5px;
+    border: 2px solid #1e1e1e;
+    color: #515151;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.hero-container-right div .button-join{
+    background-color: #1e1e1e;
+    color: #ffffff;
+    padding: 1px 3px;
+    border-radius: 5px;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.contact-heading{
+    padding-top: 70px;
+    padding-bottom: 15px;
+    color: #515151;
+    font-weight: 500;
+    font-family:Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+    font-weight: bolder;
+}
+
+.hero-container-right .icons span img{
+    width: 23px;
+}
+
+.hero-container-right .icons span:not(:last-of-type){
+    margin-right: 12px;
+}
