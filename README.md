@@ -7,10 +7,7 @@
 
 ![time](https://img.shields.io/badge/time--to--complete-5--hrs--approx.-yellowgreen)
 
----
-## :link: [See it live on Netlify]() 
-
----
+## :link: [See it live](https://fullstack-js-bc-project-01.netlify.app/) 
 
 ## :clipboard: Learning Outcomes 
 
@@ -21,6 +18,5 @@
 - Combine usage of two Pseudo classes like the use of `:not()` with `:last-of-type()`
 
 ## :camera: Screenshot
----
 
 ![screenshot](./screentshot-project1.png)
