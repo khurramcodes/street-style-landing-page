@@ -81,7 +81,7 @@
         display: block;
     }
 
-    .navbar-container{
+    section[aria-label="navbar"]{
         border-bottom: 1px solid #f0f0f0;
         padding: 1rem 2rem;
     }
@@ -175,5 +175,29 @@
         top: -5rem;
         right: 5%;
         width: 5rem;
+    }
+}
+
+@media only screen and (max-width:400px){
+    .container {
+        background-position: 30% 70%;
+        padding: 0;
+    }
+
+    .navbar-container{
+        padding: 2rem 0;
+    }
+
+    .hero-container div>img{
+        position: relative;
+        margin-top: 3rem;
+        width: 30rem;
+    }
+
+    .square img{
+        position: absolute;
+        top: 22%;
+        left: 36%;
+        width: 24.5rem;
     }
 }
