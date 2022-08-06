@@ -115,7 +115,7 @@ ul{
 }
 
 .btn-mobile{
-    font-size: 3rem;
+    font-size: 4rem;
     color: #212529;
 }
 
@@ -130,7 +130,7 @@ ul{
     justify-content: space-between;
     align-items: center;
     position: relative;
-    margin-top: 10rem; 
+    margin-top: 10rem;
 }
 
 .hero-container div>img{

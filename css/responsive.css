@@ -73,30 +73,39 @@
     html{
         font-size: 40%;
     }
-
-    .container{
-        padding-top: 0;
+    .container {
+        padding: 0;
     }
+    
+    .navbar-container{
+        padding: 2rem 5rem;
+    }
+    
+    .hero-container {
+        margin-right: 5rem;
+        margin-left: 5rem;
+    }
+
     .btn-toggle{
         display: block;
     }
 
     section[aria-label="navbar"]{
         border-bottom: 1px solid #f0f0f0;
-        padding: 1rem 2rem;
     }
 
     .navigation{
         position: absolute;
-        top: 6rem;
+        top: 8rem;
         left: 0;
         width: 100%;
-        background-color: #ffffff;
+        background-color: #f0f0f0;
         flex-direction: column;
         z-index: 2;
-        transform: translateY(calc(-100% - 6rem));
+        transform: translateY(calc(-100% - 8rem));
         transition: all .3s linear;
         padding-bottom: 5rem;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     }
 
     .list{
@@ -123,8 +132,8 @@
         font-size: 55%;
     }
 
-    .container {
-        background-position: 35% 100%;
+    .container{
+        background: none;
     }
 
     /* Hero Section */
@@ -179,14 +188,6 @@
 }
 
 @media only screen and (max-width:400px){
-    .container {
-        background-position: 30% 70%;
-        padding: 0;
-    }
-
-    .navbar-container{
-        padding: 2rem 0;
-    }
 
     .hero-container div>img{
         position: relative;
@@ -200,4 +201,30 @@
         left: 36%;
         width: 24.5rem;
     }
+}
+
+@media only screen and (max-width:400px){
+    
+    .hero-container{
+        margin-right: 0;
+        margin-left: 0;
+    }
+}
+
+@media only screen and (max-width:335px){
+    
+    .navbar-container{
+        padding: 1.5rem 2rem;
+    }
+    
+    .hero-container div>img{
+        width: 25rem;
+    }
+
+    .square img{
+        top: 20%;
+        left: 36%;
+        width: 20.5rem;
+    }
+
 }
