@@ -96,10 +96,19 @@
         z-index: 2;
         transform: translateY(calc(-100% - 6rem));
         transition: all .3s linear;
+        padding-bottom: 5rem;
     }
 
     .list{
         flex-direction: column;
+        row-gap: 2.5rem;
+        padding-top: 3rem;
+        padding-bottom: 2.5rem;
+    }
+
+    .list li:hover::after{
+        width: 50%;
+        background-color: #000000;
     }
 
     .active{
